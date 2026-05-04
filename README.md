@@ -1,29 +1,25 @@
 <p align="center">
-  <img src="https://github.com/openpeeps/PKG/blob/main/.github/logo.png" width="90px"><br>
-  OpenPeeps repository template for developing libraries,<br>projects and other cool things. 👑 Written in Nim language
+  Nim bindings for <a href="https://github.com/trusteddomainproject/OpenDMARC">OpenDMARC</a><br>
+  A C library for parsing DMARC records and evaluating DMARC policies.
 </p>
 
 <p align="center">
-  <code>nimble install {PKG}</code>
+  <code>nimble install opendmarc</code>
 </p>
 
 <p align="center">
-  <a href="https://github.com/">API reference</a><br>
-  <img src="https://github.com/openpeeps/pistachio/workflows/test/badge.svg" alt="Github Actions">  <img src="https://github.com/openpeeps/pistachio/workflows/docs/badge.svg" alt="Github Actions">
+  <a href="https://openpeeps.github.io/libopendmarc-nim">API reference</a><br>
+  <img src="https://github.com/openpeeps/libopendmarc-nim/workflows/test/badge.svg" alt="Github Actions">  <img src="https://github.com/openpeeps/libopendmarc-nim/workflows/docs/badge.svg" alt="Github Actions">
 </p>
 
-## 😍 Key Features
-- [x] Open Source | `MIT` License
-- [x] Written in Nim language
-
-## Examples
-...
+### Tests & Examples
+Check out the [/tests](https://github.com/openpeeps/libopendmarc-nim/tree/main/tests) directory for example usage!
 
 ### ❤ Contributions & Support
-- 🐛 Found a bug? [Create a new Issue](/issues)
-- 👋 Wanna help? [Fork it!](/fork)
+- 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/libopendmarc-nim/issues)
+- 👋 Wanna help? [Fork it!](https://github.com/openpeeps/libopendmarc-nim/fork)
 - 😎 [Get €20 in cloud credits from Hetzner](https://hetzner.cloud/?ref=Hm0mYGM9NxZ4)
 
 ### 🎩 License
-{PKG} | MIT license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
+MIT license. [Made by Humans from OpenPeeps](https://github.com/openpeeps).<br>
 Copyright OpenPeeps & Contributors &mdash; All rights reserved.
