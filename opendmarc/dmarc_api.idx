@@ -1,0 +1,64 @@
+nimTitle	dmarc_api	opendmarc/dmarc_api.html	module opendmarc/dmarc_api		0
+nim	in_addr	opendmarc/dmarc_api.html#in_addr	object in_addr		10
+nim	DMARC_POLICY_IP_TYPE_IPV4	opendmarc/dmarc_api.html#DMARC_POLICY_IP_TYPE_IPV4	const DMARC_POLICY_IP_TYPE_IPV4		13
+nim	DMARC_POLICY_IP_TYPE_IPV6	opendmarc/dmarc_api.html#DMARC_POLICY_IP_TYPE_IPV6	const DMARC_POLICY_IP_TYPE_IPV6		14
+nim	DMARC_PARSE_OKAY	opendmarc/dmarc_api.html#DMARC_PARSE_OKAY	const DMARC_PARSE_OKAY		15
+nim	DMARC_PARSE_ERROR_EMPTY	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_EMPTY	const DMARC_PARSE_ERROR_EMPTY		16
+nim	DMARC_PARSE_ERROR_NULL_CTX	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_NULL_CTX	const DMARC_PARSE_ERROR_NULL_CTX		17
+nim	DMARC_PARSE_ERROR_BAD_VERSION	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_BAD_VERSION	const DMARC_PARSE_ERROR_BAD_VERSION		18
+nim	DMARC_PARSE_ERROR_BAD_VALUE	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_BAD_VALUE	const DMARC_PARSE_ERROR_BAD_VALUE		19
+nim	DMARC_PARSE_ERROR_NO_REQUIRED_P	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_NO_REQUIRED_P	const DMARC_PARSE_ERROR_NO_REQUIRED_P		20
+nim	DMARC_PARSE_ERROR_NO_DOMAIN	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_NO_DOMAIN	const DMARC_PARSE_ERROR_NO_DOMAIN		21
+nim	DMARC_PARSE_ERROR_NO_ALLOC	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_NO_ALLOC	const DMARC_PARSE_ERROR_NO_ALLOC		22
+nim	DMARC_PARSE_ERROR_BAD_SPF_MACRO	opendmarc/dmarc_api.html#DMARC_PARSE_ERROR_BAD_SPF_MACRO	const DMARC_PARSE_ERROR_BAD_SPF_MACRO		23
+nim	DMARC_DNS_ERROR_NO_RECORD	opendmarc/dmarc_api.html#DMARC_DNS_ERROR_NO_RECORD	const DMARC_DNS_ERROR_NO_RECORD		25
+nim	DMARC_DNS_ERROR_NXDOMAIN	opendmarc/dmarc_api.html#DMARC_DNS_ERROR_NXDOMAIN	const DMARC_DNS_ERROR_NXDOMAIN		26
+nim	DMARC_DNS_ERROR_TMPERR	opendmarc/dmarc_api.html#DMARC_DNS_ERROR_TMPERR	const DMARC_DNS_ERROR_TMPERR		27
+nim	DMARC_TLD_ERROR_UNKNOWN	opendmarc/dmarc_api.html#DMARC_TLD_ERROR_UNKNOWN	const DMARC_TLD_ERROR_UNKNOWN		28
+nim	DMARC_FROM_DOMAIN_ABSENT	opendmarc/dmarc_api.html#DMARC_FROM_DOMAIN_ABSENT	const DMARC_FROM_DOMAIN_ABSENT		29
+nim	DMARC_POLICY_ABSENT	opendmarc/dmarc_api.html#DMARC_POLICY_ABSENT	const DMARC_POLICY_ABSENT		31
+nim	DMARC_POLICY_PASS	opendmarc/dmarc_api.html#DMARC_POLICY_PASS	const DMARC_POLICY_PASS		32
+nim	DMARC_POLICY_REJECT	opendmarc/dmarc_api.html#DMARC_POLICY_REJECT	const DMARC_POLICY_REJECT		33
+nim	DMARC_POLICY_QUARANTINE	opendmarc/dmarc_api.html#DMARC_POLICY_QUARANTINE	const DMARC_POLICY_QUARANTINE		34
+nim	DMARC_POLICY_NONE	opendmarc/dmarc_api.html#DMARC_POLICY_NONE	const DMARC_POLICY_NONE		35
+nim	DMARC_USED_POLICY_IS_P	opendmarc/dmarc_api.html#DMARC_USED_POLICY_IS_P	const DMARC_USED_POLICY_IS_P		37
+nim	DMARC_USED_POLICY_IS_SP	opendmarc/dmarc_api.html#DMARC_USED_POLICY_IS_SP	const DMARC_USED_POLICY_IS_SP		38
+nim	DMARC_POLICY_T	opendmarc/dmarc_api.html#DMARC_POLICY_T	object DMARC_POLICY_T		43
+nim	OPENDMARC_STATUS_T	opendmarc/dmarc_api.html#OPENDMARC_STATUS_T	type OPENDMARC_STATUS_T		45
+nim	OPENDMARC_LIB_T	opendmarc/dmarc_api.html#OPENDMARC_LIB_T	object OPENDMARC_LIB_T		47
+nim	opendmarc_policy_library_init	opendmarc/dmarc_api.html#opendmarc_policy_library_init,ptr.OPENDMARC_LIB_T	proc opendmarc_policy_library_init(lib_init: ptr OPENDMARC_LIB_T): OPENDMARC_STATUS_T		54
+nim	opendmarc_policy_library_shutdown	opendmarc/dmarc_api.html#opendmarc_policy_library_shutdown,ptr.OPENDMARC_LIB_T	proc opendmarc_policy_library_shutdown(lib_init: ptr OPENDMARC_LIB_T): OPENDMARC_STATUS_T		55
+nim	opendmarc_policy_connect_init	opendmarc/dmarc_api.html#opendmarc_policy_connect_init,ptr.uint8,cint	proc opendmarc_policy_connect_init(ip_addr: ptr uint8; ip_type: cint): ptr DMARC_POLICY_T		57
+nim	opendmarc_policy_connect_clear	opendmarc/dmarc_api.html#opendmarc_policy_connect_clear,ptr.DMARC_POLICY_T	proc opendmarc_policy_connect_clear(pctx: ptr DMARC_POLICY_T): ptr DMARC_POLICY_T		58
+nim	opendmarc_policy_connect_rset	opendmarc/dmarc_api.html#opendmarc_policy_connect_rset,ptr.DMARC_POLICY_T	proc opendmarc_policy_connect_rset(pctx: ptr DMARC_POLICY_T): ptr DMARC_POLICY_T		59
+nim	opendmarc_policy_connect_shutdown	opendmarc/dmarc_api.html#opendmarc_policy_connect_shutdown,ptr.DMARC_POLICY_T	proc opendmarc_policy_connect_shutdown(pctx: ptr DMARC_POLICY_T): ptr DMARC_POLICY_T		60
+nim	opendmarc_policy_store_from_domain	opendmarc/dmarc_api.html#opendmarc_policy_store_from_domain,ptr.DMARC_POLICY_T,ptr.uint8	proc opendmarc_policy_store_from_domain(pctx: ptr DMARC_POLICY_T; domain: ptr uint8): OPENDMARC_STATUS_T		62
+nim	opendmarc_policy_store_dkim	opendmarc/dmarc_api.html#opendmarc_policy_store_dkim,ptr.DMARC_POLICY_T,ptr.uint8,ptr.uint8,cint,ptr.uint8	proc opendmarc_policy_store_dkim(pctx: ptr DMARC_POLICY_T;\n                            domain, selector: ptr uint8; result: cint;\n                            human_result: ptr uint8): OPENDMARC_STATUS_T		63
+nim	opendmarc_policy_store_spf	opendmarc/dmarc_api.html#opendmarc_policy_store_spf,ptr.DMARC_POLICY_T,ptr.uint8,cint,cint,ptr.uint8	proc opendmarc_policy_store_spf(pctx: ptr DMARC_POLICY_T; domain: ptr uint8;\n                           result, origin: cint; human_result: ptr uint8): OPENDMARC_STATUS_T		64
+nim	opendmarc_policy_query_dmarc	opendmarc/dmarc_api.html#opendmarc_policy_query_dmarc,ptr.DMARC_POLICY_T,ptr.uint8	proc opendmarc_policy_query_dmarc(pctx: ptr DMARC_POLICY_T; domain: ptr uint8): OPENDMARC_STATUS_T		66
+nim	opendmarc_policy_parse_dmarc	opendmarc/dmarc_api.html#opendmarc_policy_parse_dmarc,ptr.DMARC_POLICY_T,ptr.uint8,ptr.uint8	proc opendmarc_policy_parse_dmarc(pctx: ptr DMARC_POLICY_T; domain, record: ptr uint8): OPENDMARC_STATUS_T		67
+nim	opendmarc_policy_store_dmarc	opendmarc/dmarc_api.html#opendmarc_policy_store_dmarc,ptr.DMARC_POLICY_T,ptr.uint8,ptr.uint8,ptr.uint8	proc opendmarc_policy_store_dmarc(pctx: ptr DMARC_POLICY_T; dmarc_record, domain,\n    organizationaldomain: ptr uint8): OPENDMARC_STATUS_T		68
+nim	opendmarc_get_policy_to_enforce	opendmarc/dmarc_api.html#opendmarc_get_policy_to_enforce,ptr.DMARC_POLICY_T	proc opendmarc_get_policy_to_enforce(pctx: ptr DMARC_POLICY_T): OPENDMARC_STATUS_T		70
+nim	opendmarc_policy_fetch_alignment	opendmarc/dmarc_api.html#opendmarc_policy_fetch_alignment,ptr.DMARC_POLICY_T,ptr.cint,ptr.cint	proc opendmarc_policy_fetch_alignment(pctx: ptr DMARC_POLICY_T;\n                                 dkim_alignment, spf_alignment: ptr cint): OPENDMARC_STATUS_T		71
+nim	opendmarc_policy_fetch_pct	opendmarc/dmarc_api.html#opendmarc_policy_fetch_pct,ptr.DMARC_POLICY_T,ptr.cint	proc opendmarc_policy_fetch_pct(pctx: ptr DMARC_POLICY_T; pctp: ptr cint): OPENDMARC_STATUS_T		72
+nim	opendmarc_policy_fetch_adkim	opendmarc/dmarc_api.html#opendmarc_policy_fetch_adkim,ptr.DMARC_POLICY_T,ptr.cint	proc opendmarc_policy_fetch_adkim(pctx: ptr DMARC_POLICY_T; adkim: ptr cint): OPENDMARC_STATUS_T		73
+nim	opendmarc_policy_fetch_aspf	opendmarc/dmarc_api.html#opendmarc_policy_fetch_aspf,ptr.DMARC_POLICY_T,ptr.cint	proc opendmarc_policy_fetch_aspf(pctx: ptr DMARC_POLICY_T; aspf: ptr cint): OPENDMARC_STATUS_T		74
+nim	opendmarc_policy_fetch_p	opendmarc/dmarc_api.html#opendmarc_policy_fetch_p,ptr.DMARC_POLICY_T,ptr.cint	proc opendmarc_policy_fetch_p(pctx: ptr DMARC_POLICY_T; p: ptr cint): OPENDMARC_STATUS_T		75
+nim	opendmarc_policy_fetch_sp	opendmarc/dmarc_api.html#opendmarc_policy_fetch_sp,ptr.DMARC_POLICY_T,ptr.cint	proc opendmarc_policy_fetch_sp(pctx: ptr DMARC_POLICY_T; sp: ptr cint): OPENDMARC_STATUS_T		76
+nim	opendmarc_policy_fetch_rua	opendmarc/dmarc_api.html#opendmarc_policy_fetch_rua,ptr.DMARC_POLICY_T,ptr.uint8,csize_t,cint	proc opendmarc_policy_fetch_rua(pctx: ptr DMARC_POLICY_T; list_buf: ptr uint8;\n                           size_of_buf: csize_t; constant: cint): ptr ptr uint8		78
+nim	opendmarc_policy_fetch_ruf	opendmarc/dmarc_api.html#opendmarc_policy_fetch_ruf,ptr.DMARC_POLICY_T,ptr.uint8,csize_t,cint	proc opendmarc_policy_fetch_ruf(pctx: ptr DMARC_POLICY_T; list_buf: ptr uint8;\n                           size_of_buf: csize_t; constant: cint): ptr ptr uint8		79
+nim	opendmarc_policy_fetch_utilized_domain	opendmarc/dmarc_api.html#opendmarc_policy_fetch_utilized_domain,ptr.DMARC_POLICY_T,ptr.uint8,csize_t	proc opendmarc_policy_fetch_utilized_domain(pctx: ptr DMARC_POLICY_T; buf: ptr uint8;\n                                       buflen: csize_t): OPENDMARC_STATUS_T		80
+nim	opendmarc_policy_fetch_from_domain	opendmarc/dmarc_api.html#opendmarc_policy_fetch_from_domain,ptr.DMARC_POLICY_T,ptr.uint8,csize_t	proc opendmarc_policy_fetch_from_domain(pctx: ptr DMARC_POLICY_T; buf: ptr uint8;\n                                   buflen: csize_t): OPENDMARC_STATUS_T		81
+nim	opendmarc_policy_query_dmarc_xdomain	opendmarc/dmarc_api.html#opendmarc_policy_query_dmarc_xdomain,ptr.DMARC_POLICY_T,ptr.uint8	proc opendmarc_policy_query_dmarc_xdomain(pctx: ptr DMARC_POLICY_T; uri: ptr uint8): OPENDMARC_STATUS_T		82
+nim	opendmarc_get_policy_token_used	opendmarc/dmarc_api.html#opendmarc_get_policy_token_used,ptr.DMARC_POLICY_T	proc opendmarc_get_policy_token_used(pctx: ptr DMARC_POLICY_T): OPENDMARC_STATUS_T		83
+nim	opendmarc_tld_read_file	opendmarc/dmarc_api.html#opendmarc_tld_read_file,cstring,cstring,cstring,cstring	proc opendmarc_tld_read_file(path_fname, commentstring, drop, exception: cstring): cint		85
+nim	opendmarc_tld_shutdown	opendmarc/dmarc_api.html#opendmarc_tld_shutdown	proc opendmarc_tld_shutdown(): void		86
+nim	opendmarc_xml	opendmarc/dmarc_api.html#opendmarc_xml,cstring,csize_t,cstring,csize_t	proc opendmarc_xml(b: cstring; blen: csize_t; e: cstring; elen: csize_t): ptr ptr uint8		88
+nim	opendmarc_xml_parse	opendmarc/dmarc_api.html#opendmarc_xml_parse,cstring,cstring,csize_t	proc opendmarc_xml_parse(fname, err_buf: cstring; err_len: csize_t): ptr ptr uint8		89
+nim	opendmarc_dns_fake_record	opendmarc/dmarc_api.html#opendmarc_dns_fake_record,cstring,cstring	proc opendmarc_dns_fake_record(name, answer: cstring): void		91
+nim	opendmarc_util_clearargv	opendmarc/dmarc_api.html#opendmarc_util_clearargv,ptr.ptr.uint8	proc opendmarc_util_clearargv(ary: ptr ptr uint8): ptr ptr uint8		92
+nim	opendmarc_policy_status_to_str	opendmarc/dmarc_api.html#opendmarc_policy_status_to_str,OPENDMARC_STATUS_T	proc opendmarc_policy_status_to_str(status: OPENDMARC_STATUS_T): cstring		93
+nim	opendmarc_policy_check_alignment	opendmarc/dmarc_api.html#opendmarc_policy_check_alignment,ptr.uint8,ptr.uint8,cint	proc opendmarc_policy_check_alignment(subdomain, tld: ptr uint8; mode: cint): cint		94
+nim	opendmarc_policy_to_buf	opendmarc/dmarc_api.html#opendmarc_policy_to_buf,ptr.DMARC_POLICY_T,cstring,csize_t	proc opendmarc_policy_to_buf(pctx: ptr DMARC_POLICY_T; buf: cstring; buflen: csize_t): cint		95
+nim	opendmarc_spf_test	opendmarc/dmarc_api.html#opendmarc_spf_test,cstring,cstring,cstring,cstring,cint,cstring,csize_t,ptr.cint	proc opendmarc_spf_test(ip_address, mail_from_domain, helo_domain, spf_record: cstring;\n                   soft_fail_as_pass: cint; human_readable: cstring;\n                   human_readable_len: csize_t; use_mailfrom: ptr cint): cint		97
+nim	opendmarc_spf2_test	opendmarc/dmarc_api.html#opendmarc_spf2_test,cstring,cstring,cstring,cstring,cint,cstring,csize_t,ptr.cint	proc opendmarc_spf2_test(ip_address, mail_from_domain, helo_domain, spf_record: cstring;\n                    softfail_okay_flag: cint; human_readable: cstring;\n                    human_readable_len: csize_t; used_mfrom: ptr cint): cint		98
